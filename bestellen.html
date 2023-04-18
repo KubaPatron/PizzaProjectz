@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="img/logo.ico" type="image/icon type">
+  <title>Sopranos Pizza</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+
+  <header>
+
+    <center><img src="img/Logo.avif" alt="Logo Sopranos" width="500">
+
+  </header>
+
+</head>
+
+<body>
+
+
+
+  <div>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Bestellen.html">Bestellen</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <center><br><br>
+    <h1>Bestellen</h1>
+
+    <div>
+      <br><br>
+
+      <form class="myForm" method="get" enctype="application/x-www-form-urlencoded"
+        action="/html/codes/html_form_handler.cfm">
+
+        <p>
+          <label>Naam
+            <input type="text" name="klant_naam" required>
+          </label>
+        </p>
+
+        <p>
+          <label>adres
+            <input type="text" name="klant_adres" required>
+          </label>
+        </p>
+
+        <p>
+          <label>Tel nummer
+            <input type="text" name="klant_nummer" required>
+          </label>
+        </p>
+
+        <p>
+          <label>Kies een pizza
+            <select id="pickup_place" name="pickup_place">
+              <option value="" selected="selected">Selecteer pizza</option>
+              <option value="website">Pizza Sopranos Special (€13,00)</option>
+              <option value="website">Pizza Salami (€7,50)</option>
+              <option value="membership">Pizza Kebab (€11,00)</option>
+              <option value="telepathy">Pizza Quattro Formaggi (€10,00)</option>
+            </select>
+          </label>
+        </p>
+
+        <p>
+          <label>Extra informatie
+            <textarea name="informatie" maxlength="500"></textarea>
+          </label>
+        </p>
+
+
+        <form method="get" action="/doorlink.html">
+          <p><button type="submit">Plaats uw bestelling</button></p>`
+
+        </form>
+    </div>
+
+
+</body>
+
+
+<br>
+
+
+<div class="pay">
+  <br>
+  <p class="t1">Eenvoudig afrekenen met:</p>
+  <img src="img/iDEAL_1024x1024.gif" alt="" height="33px">
+  <img src="img/paypal-logo.svg" alt="" height="33px">
+  <img src="img/266px-Mastercard-logo.png" alt="" height="33px">
+  <img src="img/visa-logo.png" alt="" height="33px">
+</div>
+<br>
+<footer>
+
+
+  <center>
+    <p>&copy; Pizza Sopranos 2022</p>
+
+</footer>
+
+</html>
